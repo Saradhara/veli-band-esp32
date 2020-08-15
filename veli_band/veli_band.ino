@@ -77,6 +77,8 @@ void keepWiFiAlive(void * parameter){
     for(;;){
         if(WiFi.status() == WL_CONNECTED){
             Serial.println("[WIFI] Connected:");
+            Serial.println("IP address: ");
+            Serial.println(WiFi.localIP());
             vTaskDelay(10000 / portTICK_PERIOD_MS);
             continue;
         }
