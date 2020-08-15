@@ -20,9 +20,11 @@
 #define SERVER_END_POINT  "http://192.168.1.11:8888/trace"
 #define WIFI_TIMEOUT_MS 5000 // 5 second WiFi connection timeout, don't change this parameter 
 #define WIFI_RECOVER_TIME_MS 10000 // Wait 10 seconds after a failed connection attempt
-#define THRESHOLD -64
+#define TX_POWER -48 // measured RSSI at 1m distance
+#define THRESHOLD -64 // cut off
 
 int LED_BUILTIN = 2;
+int LED_BUILTIN_3 = 3;
 int scanTime = 1; //In seconds
 
 BLEAdvertising *pAdvertising;
@@ -31,6 +33,7 @@ BLEScan* pBLEScan;
 typedef struct{
   String uuid;
   float distance;
+  String risk;
 }Trace;
 
 /* this variable hold queue handle */
@@ -113,12 +116,15 @@ void pushData(void * parameter){
           while(xStatus == pdPASS){
               String uuid = data.uuid;
               float distance = data.distance;
+              String risk = data.risk;
               Serial.print("receiveTask got data: ");
               Serial.print("uuid = ");
               Serial.print(uuid);
               Serial.print(" distance = ");
               Serial.println(distance); 
-              send_data = send_data + "@@@" +uuid + "#" +String(distance,2);
+              Serial.print("COVID risk = ");
+              Serial.println(risk); 
+              send_data = send_data + "@@@" +uuid + "#" +String(distance,2)+ "#" + risk;
               xStatus = xQueueReceive( xQueue, &data, xTicksToWait );
             }
           if(send_data != ""){
@@ -150,7 +156,7 @@ void setBeacon() {
   oBeacon.setProximityUUID(BLEUUID(BEACON_UUID));
   oBeacon.setMajor(0x8153);
   oBeacon.setMinor(0x0);
-  oBeacon.setSignalPower(-56);
+  oBeacon.setSignalPower(TX_POWER);
   BLEAdvertisementData oAdvertisementData = BLEAdvertisementData();
   BLEAdvertisementData oScanResponseData = BLEAdvertisementData();  
   oAdvertisementData.setFlags(0x04); // BR_EDR_NOT_SUPPORTED 0x04
@@ -190,16 +196,41 @@ class MyAdvertisedDeviceCallbacks: public BLEAdvertisedDeviceCallbacks {
             if(rssi >= THRESHOLD){
                 float distance = calculate_distance(tx_power, rssi);
                 String uuid = oBeacon.getProximityUUID().toString().c_str();
+                String covid_risk = "";
+                if(distance<=1){
+                  covid_risk = "HIGH RISK";
+                  //buzzer code place here
+                   digitalWrite(LED_BUILTIN, HIGH);
+                  vTaskDelay(100 / portTICK_PERIOD_MS);
+                  digitalWrite(LED_BUILTIN, LOW);
+                  vTaskDelay(100 / portTICK_PERIOD_MS);
+                  digitalWrite(LED_BUILTIN, HIGH);
+                  vTaskDelay(100 / portTICK_PERIOD_MS);
+                  digitalWrite(LED_BUILTIN, LOW);
+                }else if(distance<=2){
+                  covid_risk = "MEDIUM RISK";
+                  //buzzer code place here
+                  digitalWrite(LED_BUILTIN, HIGH);
+                  vTaskDelay(100 / portTICK_PERIOD_MS);
+                  digitalWrite(LED_BUILTIN, LOW);
+                  vTaskDelay(100 / portTICK_PERIOD_MS);
+                  digitalWrite(LED_BUILTIN, HIGH);
+                  vTaskDelay(100 / portTICK_PERIOD_MS);
+                  digitalWrite(LED_BUILTIN, LOW);
+                }else{
+                  covid_risk = "LOW RISK";
+                  digitalWrite(LED_BUILTIN, HIGH);
+                  vTaskDelay(100 / portTICK_PERIOD_MS);
+                  digitalWrite(LED_BUILTIN, LOW);
+                }
                 data.distance = distance;
                 data.uuid = uuid;
+                data.risk = covid_risk;
                 Serial.printf("distance violated by: %s, d=%fm \n",oBeacon.getProximityUUID().toString().c_str(), distance);
                 xStatus = xQueueSendToFront( xQueue, &data, xTicksToWait );
                 if( xStatus != pdPASS ) {
                   Serial.printf("Queue is full !!");
                  }
-                digitalWrite(LED_BUILTIN, HIGH);
-                vTaskDelay(100 / portTICK_PERIOD_MS);
-                digitalWrite(LED_BUILTIN, LOW);
               }
           }
          }
