@@ -2,6 +2,7 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
+
 @app.route("/")
 def hello():
     return "Welcome to QUAL5 IOT world !!!!!"
@@ -14,9 +15,10 @@ def update_trace():
     traces = [trace for trace in traces if trace != '']
     print("Total {} traces received !!! ".format(len(traces)))
     for trace in traces:
-        uuid, distance = trace.split("#")
-        print('uuid     : {}'.format(uuid))
-        print('distance : {}'.format(distance))
+        uuid, distance, risk = trace.split("#")
+        print('uuid       : {}'.format(uuid))
+#        print('distance   : {}'.format(distance))
+        print('COVID risk : {}'.format(risk))
     return jsonify({"data_status": "received"})
 
 
