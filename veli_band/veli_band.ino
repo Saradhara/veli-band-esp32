@@ -16,15 +16,15 @@ void setup()
   client.setServer(mqttServer, mqttPort); // Connect to PubNub.
 
   /*Task to WIFI keep Alive*/
-  xTaskCreatePinnedToCore(keepWiFiAlive, "keepWiFiAlive", 5000, NULL, 1, NULL, 0);
+  xTaskCreatePinnedToCore(keepWiFiAlive, "keepWiFiAlive", 4096, NULL, 1, NULL, 0);
   /*Task to push data to Backend*/
-  xTaskCreatePinnedToCore(pushData, "pushData", 5000, NULL, 1, NULL, 0);
+  xTaskCreatePinnedToCore(pushData, "pushData", 4096, NULL, 1, NULL, 0);
   /*Task to send HeartBeat*/
-  xTaskCreatePinnedToCore(heartBeat, "heartBeat", 10240, NULL, 0, NULL, 0);
+  xTaskCreatePinnedToCore(heartBeat, "heartBeat", 4096, NULL, 0, NULL, 0);
 
   Serial.println("Scanning...........");
   pinMode(LED_BUILTIN, OUTPUT);
-  BLEDevice::init("");
+  BLEDevice::init("VeliBand");
   BLEDevice::setPower(ESP_PWR_LVL_P9);
 
   esp_ble_tx_power_set(ESP_BLE_PWR_TYPE_DEFAULT, ESP_PWR_LVL_P9);
@@ -37,7 +37,7 @@ void setup()
   esp_ble_tx_power_set(ESP_BLE_PWR_TYPE_CONN_HDL6, ESP_PWR_LVL_P9);
   esp_ble_tx_power_set(ESP_BLE_PWR_TYPE_CONN_HDL8, ESP_PWR_LVL_P9);
   esp_ble_tx_power_set(ESP_BLE_PWR_TYPE_ADV, ESP_PWR_LVL_P9);
-
+  BLEServer *pServer = BLEDevice::createServer();
   pAdvertising = BLEDevice::getAdvertising();
   setBeacon();
   pAdvertising->start();
