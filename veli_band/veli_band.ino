@@ -13,6 +13,7 @@
 #include "Arduino.h"
 #include "WiFi.h"
 #include "HTTPClient.h"
+#include "veli_utils.h"
 
 #define WIFI_NETWORK "braver"
 #define WIFI_PASSWORD "vishnu@392"
@@ -20,7 +21,7 @@
 #define SERVER_END_POINT  "http://192.168.1.11:8888/trace"
 #define WIFI_TIMEOUT_MS 5000 // 5 second WiFi connection timeout, don't change this parameter 
 #define WIFI_RECOVER_TIME_MS 10000 // Wait 10 seconds after a failed connection attempt
-#define TX_POWER -48 // measured RSSI at 1m distance
+#define TX_POWER -57 // measured RSSI at 1m distance
 #define THRESHOLD -64 // cut off
 
 int LED_BUILTIN = 2;
@@ -42,41 +43,6 @@ xQueueHandle xQueue;
 //uint16_t beconUUID = 0xFEAA;
 #define ENDIAN_CHANGE_U16(x) ((((x)&0xFF00)>>8) + (((x)&0xFF)<<8))
 
-float power(float x, int y) 
-{ 
-    float temp; 
-    if( y == 0) 
-       return 1; 
-    temp = power(x, y/2);        
-    if (y%2 == 0) 
-        return temp*temp; 
-    else
-    { 
-        if(y > 0) 
-            return x*temp*temp; 
-        else
-            return (temp*temp)/x; 
-    } 
-}
-   
-float calculate_distance (int tx_power, int rssi )
-{
-    float A = 0.950827299;
-    float B = 4.61399983;
-    float C = 0.06503583;
-    if (rssi == 0){
-        return -1.0;
-    }
-    if (tx_power == 0){
-        return -1.0;
-    }
-    float ratio = rssi * 1.0 / tx_power;
-    if (ratio < 1.0){
-        return power(ratio,10);
-    }
-    float distance = (A) * (power(ratio,B)) + C;
-    return distance;
-}
 void keepWiFiAlive(void * parameter){
     for(;;){
         if(WiFi.status() == WL_CONNECTED){
@@ -248,8 +214,8 @@ void setup() {
   Serial.begin(115200);
   /* create the queue which size can contains 5 elements of Data */
   xQueue = xQueueCreate(20, sizeof(Trace));
-  WiFi.mode(WIFI_STA);
-  WiFi.begin(WIFI_NETWORK, WIFI_PASSWORD);
+//  WiFi.mode(WIFI_STA);
+//  WiFi.begin(WIFI_NETWORK, WIFI_PASSWORD);
   delay(5000);
   xTaskCreatePinnedToCore(
   keepWiFiAlive,
