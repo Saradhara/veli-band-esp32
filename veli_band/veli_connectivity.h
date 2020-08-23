@@ -1,7 +1,7 @@
 /*
- *Author : Vishnu Saradhara 
- *Date   : 21/08/2020
- */
+  Author : Vishnu Saradhara
+  Date   : 21/08/2020
+*/
 #include "WiFi.h"
 #include "HTTPClient.h"
 #include "PubSubClient.h"
@@ -15,7 +15,8 @@
 const char *mqttServer = "192.168.43.251";
 const int mqttPort = 1883;
 const char *clientID = "";
-const char *channelName = "hello_world";
+const char *topic_heartbeat = "heartbeat";
+const char *topic_trace = "trace";
 
 WiFiClient MQTTclient;
 PubSubClient client(MQTTclient);
@@ -64,7 +65,7 @@ void keepWiFiAlive(void *parameter)
   }
 }
 
-void pushData(void *parameter)
+void pushDataHTTP(void *parameter)
 {
   const TickType_t xTicksToWait = pdMS_TO_TICKS(100);
   BaseType_t xStatus;
@@ -122,6 +123,45 @@ void pushData(void *parameter)
   }
 }
 
+void pushDataMQTT(void *parameter)
+{
+  const TickType_t xTicksToWait = pdMS_TO_TICKS(100);
+  BaseType_t xStatus;
+  Trace data;
+  for (;;)
+  {  
+    if (WiFi.status() == WL_CONNECTED && client.connected())
+    { 
+    xStatus = xQueueReceive(xQueue, &data, xTicksToWait);
+    while (xStatus == pdPASS)
+    {
+      String uuid = data.uuid;
+      float distance = data.distance;
+      String risk = data.risk;
+      Serial.print("receiveTask got data: ");
+      Serial.print("uuid = ");
+      Serial.print(uuid);
+      Serial.print(" distance = ");
+      Serial.println(distance);
+      Serial.print("COVID risk = ");
+      Serial.println(risk);
+      
+      DynamicJsonDocument trace_json_doc(1024);
+      trace_json_doc["uuid"] = uuid;
+      trace_json_doc["covid_risk"] = risk;
+      trace_json_doc["distance"] = distance;
+      trace_json_doc["timestamp"] = 11223344;
+      char trace_json_buffer[500];
+      size_t n = serializeJson(trace_json_doc, trace_json_buffer);
+      Serial.println("Sending message to MQTT topic...");
+      client.publish(topic_trace, trace_json_buffer, n);  // Publish message.
+      xStatus = xQueueReceive(xQueue, &data, xTicksToWait);
+    }
+    }
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
+  }
+}
+
 void heartBeat(void *parameter)
 {
   const TickType_t xTicksToWait = pdMS_TO_TICKS(100);
@@ -151,7 +191,7 @@ void heartBeat(void *parameter)
         size_t n = serializeJson(doc, json_buffer);
         Serial.println("Sending message to MQTT topic..");
         Serial.println(json_buffer);
-        client.publish(channelName, json_buffer, n);  // Publish message.
+        client.publish(topic_heartbeat, json_buffer, n);  // Publish message.
         vTaskDelay(10000 / portTICK_PERIOD_MS);
       }
     }

@@ -18,7 +18,8 @@ void setup()
   /*Task to WIFI keep Alive*/
   xTaskCreatePinnedToCore(keepWiFiAlive, "keepWiFiAlive", 4096, NULL, 1, NULL, 0);
   /*Task to push data to Backend*/
-  xTaskCreatePinnedToCore(pushData, "pushData", 4096, NULL, 1, NULL, 0);
+//  xTaskCreatePinnedToCore(pushDataHTTP, "pushDataHTTP", 4096, NULL, 1, NULL, 0);
+  xTaskCreatePinnedToCore(pushDataMQTT, "pushDataMQTT", 4096, NULL, 1, NULL, 0);
   /*Task to send HeartBeat*/
   xTaskCreatePinnedToCore(heartBeat, "heartBeat", 4096, NULL, 0, NULL, 0);
 
