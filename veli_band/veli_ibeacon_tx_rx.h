@@ -11,34 +11,19 @@
 int LED_BUILTIN = 2;
 
 #define ENDIAN_CHANGE_U16(x)((((x) &0xFF00) >> 8) + (((x) &0xFF) << 8))
-#define BEACON_UUID "8ec76ea3-6668-48da-9866-2462ABDD4230"  // UUID 1 128-Bit (may use linux tool uuidgen or random numbers via https://www.uuidgenerator.net/)
 #define TX_POWER - 57 // measured RSSI at 1m distance
 #define THRESHOLD - 64  // cut off
 int scanTime = 1; //In seconds
 BLEScan * pBLEScan;
 BLEAdvertising * pAdvertising;
 
-uint16_t str_to_uint16(const char *str) {
-    char *end;
-    uint16_t res;
-    errno = 0;
-    long val = strtol(str, &end, 10);
-    if (errno || end == str || *end != '\0' || val < 0 || val >= 0x10000) {
-        return false;
-    }
-    res = (uint16_t)val;
-    return res;
-}
 /*iBeacon Transmitter called from setup*/
 void setBeacon()
 {
   BLEBeacon oBeacon = BLEBeacon();
   oBeacon.setManufacturerId(0x4C00);  // fake Apple 0x004C LSB (ENDIAN_CHANGE_U16!)
-  String mac = WiFi.macAddress();
-  mac.replace(":", "");
-  String uuid = BEACON_UUID + mac;
-  uint16_t uuid_uint = uuid_to_uint_16();
-  oBeacon.setProximityUUID(BLEUUID(BEACON_UUID));
+  Serial.printf("Setting UUID: %s/n",self_uuid);
+  oBeacon.setProximityUUID(BLEUUID(self_uuid));
   oBeacon.setMajor(0x8153);
   oBeacon.setMinor(0x0);
   oBeacon.setSignalPower(TX_POWER);

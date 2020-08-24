@@ -17,6 +17,7 @@ const int mqttPort = 1883;
 const char *clientID = "";
 const char *topic_heartbeat = "heartbeat";
 const char *topic_trace = "trace";
+char *self_uuid;
 
 WiFiClient MQTTclient;
 PubSubClient client(MQTTclient);
@@ -34,6 +35,19 @@ Trace;
 /*this variable hold queue handle */
 xQueueHandle xQueue;
 long lastReconnectAttempt = 0;
+
+char *get_uuid(){
+  static char uuid[100];
+  char *uuid_addr_c = "8ec76ea3-6668-48da-9866-";
+  String mac = WiFi.macAddress();
+  mac.replace(":", "");
+  mac.toLowerCase();
+  const char *mac_addr_c = mac.c_str();
+  strcpy(uuid,uuid_addr_c);
+  strcat(uuid, mac_addr_c);
+  Serial.printf("Self UUID: %s\n",uuid);
+  return uuid;
+}
 
 void keepWiFiAlive(void *parameter)
 {
@@ -147,7 +161,8 @@ void pushDataMQTT(void *parameter)
       Serial.println(risk);
       
       DynamicJsonDocument trace_json_doc(1024);
-      trace_json_doc["uuid"] = uuid;
+      trace_json_doc["partner_uuid"] = uuid;
+      trace_json_doc["self_uuid"] = String(self_uuid);
       trace_json_doc["covid_risk"] = risk;
       trace_json_doc["distance"] = distance;
       trace_json_doc["timestamp"] = 11223344;
@@ -184,7 +199,7 @@ void heartBeat(void *parameter)
         String ip = WiFi.localIP().toString();
         mac.replace(":", "");
         DynamicJsonDocument doc(1024);
-        doc["mac"] = mac;
+        doc["self_uuid"] = String(self_uuid);
         doc["ip"] = ip;
         doc["battery"] = 33;
         char json_buffer[100];

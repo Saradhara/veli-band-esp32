@@ -11,6 +11,7 @@
 void setup()
 {
   Serial.begin(115200);
+  self_uuid = get_uuid();
   /*create the queue which size can contains 5 elements of Data */
   xQueue = xQueueCreate(20, sizeof(Trace));
   client.setServer(mqttServer, mqttPort); // Connect to PubNub.
