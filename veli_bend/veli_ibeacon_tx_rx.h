@@ -75,7 +75,7 @@ class MyAdvertisedDeviceCallbacks: public BLEAdvertisedDeviceCallbacks
           String covid_risk = "";
           if (distance <= 1)
           {
-            covid_risk = "HIGH RISK";
+            covid_risk = "HIGH_RISK";
             //buzzer code place here
             digitalWrite(LED_BUILTIN, HIGH);
             vTaskDelay(100 / portTICK_PERIOD_MS);
@@ -83,7 +83,7 @@ class MyAdvertisedDeviceCallbacks: public BLEAdvertisedDeviceCallbacks
           }
           else if (distance <= 2)
           {
-            covid_risk = "MEDIUM RISK";
+            covid_risk = "MEDIUM_RISK";
             //buzzer code place here
             digitalWrite(LED_BUILTIN, HIGH);
             vTaskDelay(100 / portTICK_PERIOD_MS);
@@ -91,7 +91,7 @@ class MyAdvertisedDeviceCallbacks: public BLEAdvertisedDeviceCallbacks
           }
           else
           {
-            covid_risk = "LOW RISK";
+            covid_risk = "LOW_RISK";
             digitalWrite(LED_BUILTIN, HIGH);
             vTaskDelay(100 / portTICK_PERIOD_MS);
             digitalWrite(LED_BUILTIN, LOW);
