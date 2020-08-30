@@ -1,5 +1,5 @@
 [Unit]
-Description=consumable backend service
+Description=veliband backend service
 After=network.target
 StartLimitIntervalSec=0
 [Service]
@@ -7,6 +7,6 @@ Type=simple
 Restart=always
 RestartSec=1
 User=qualfi
-ExecStart=/usr/bin/python3 /home/qualfi/consumable-bag-tracking-flow/consumablebags/manage.py runserver 0.0.0.0:7000
+ExecStart=/usr/bin/python3 /home/qualfi/veli-bend-esp32/veli_bend_backend/velibend/manage.py runserver 0.0.0.0:7005
 [Install]
 WantedBy=multi-user.target

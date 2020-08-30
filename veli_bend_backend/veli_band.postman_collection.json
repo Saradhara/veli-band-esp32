@@ -1,0 +1,369 @@
+{
+	"variables": [],
+	"info": {
+		"name": "veli_band",
+		"_postman_id": "0bdae64c-5489-b926-086d-453c8a484703",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "{{url}}/register-devices/",
+			"request": {
+				"url": "{{url}}/register-devices/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uuid\": \"d1353151-efbf-b195-724a-085e0c8aa06d\",\r\n    \"employee_id\": \"Kiran123\",\r\n    \"employee_name\": \"Kiran\",\r\n    \"temperature\": 35,\r\n    \"breathing\": false,\r\n    \"cough\": false,\r\n    \"body_pain\": false,\r\n    \"throat_pain\": true\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/register-devices/uuid/",
+			"request": {
+				"url": "{{url}}/register-devices/d1353151-efbf-b195-724a-085e0c8aa06d/",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"uuid\": \"d1353151-efbf-b195-724a-085e0c8aa06d\",\n    \"employee_id\": \"Kiran123\",\n    \"employee_name\": \"Kiran\",\n    \"temperature\": 35,\n    \"breathing\": false,\n    \"cough\": true,\n    \"body_pain\": false,\n    \"throat_pain\": true\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/register-devices/uuid/",
+			"request": {
+				"url": "{{url}}/register-devices/d1353151-efbf-b195-724a-085e0c8aa06d/",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/register-devices/<uuid>/",
+			"request": {
+				"url": "{{url}}/register-devices/d1353151-efbf-b195-724a-085e0c8aa06d/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uuid\": \"8ec76ea3-6668-48da-9866-fcf5c4315204\",\r\n    \"employee_id\": \"vishnu123\",\r\n    \"employee_name\": \"vishnu\",\r\n    \"temperature\": 35,\r\n    \"breathing\": false,\r\n    \"cough\": false,\r\n    \"body_pain\": false,\r\n    \"throat_pain\": true\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/register-devices",
+			"request": {
+				"url": "{{url}}/register-devices/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uuid\": \"8ec76ea3-6668-48da-9866-fcf5c4315204\",\r\n    \"employee_id\": \"vishnu123\",\r\n    \"employee_name\": \"vishnu\",\r\n    \"temperature\": 35,\r\n    \"breathing\": false,\r\n    \"cough\": false,\r\n    \"body_pain\": false,\r\n    \"throat_pain\": true\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/trace-events/",
+			"request": {
+				"url": "{{url}}/trace-events/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"partner_uuid\": \"8ec76ea3-6668-48da-9866-fcf5c4315204\",\r\n  \"self_uuid\": \"8ec76ea3-6668-48da-9866-2462abdd4230\",\r\n  \"min_distance\": 0.01,\r\n  \"max_distance\": 0.04,\r\n  \"duration\": 22,\r\n  \"covid_risk\": \"HIGH_RISK\",\r\n  \"first_timestamp\": \"2020-08-29T16:52:37.526881\",\r\n  \"last_timestamp\": \"2020-08-29T16:52:55.526882\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/trace-events/",
+			"request": {
+				"url": "{{url}}/trace-events/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uuid\": \"8ec76ea3-6668-48da-9866-fcf5c4315204\",\r\n    \"employee_id\": \"vishnu123\",\r\n    \"employee_name\": \"vishnu\",\r\n    \"temperature\": 35,\r\n    \"breathing\": false,\r\n    \"cough\": false,\r\n    \"body_pain\": false,\r\n    \"throat_pain\": true\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/trace-events/ ?emp_id=<emp_id>",
+			"request": {
+				"url": {
+					"raw": "{{url}}/trace-events/?emp_id=vishnu123",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"trace-events",
+						""
+					],
+					"query": [
+						{
+							"key": "emp_id",
+							"value": "vishnu123",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uuid\": \"8ec76ea3-6668-48da-9866-fcf5c4315204\",\r\n    \"employee_id\": \"vishnu123\",\r\n    \"employee_name\": \"vishnu\",\r\n    \"temperature\": 35,\r\n    \"breathing\": false,\r\n    \"cough\": false,\r\n    \"body_pain\": false,\r\n    \"throat_pain\": true\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/trace-events/?covid_risk=<RISK>",
+			"request": {
+				"url": {
+					"raw": "{{url}}/trace-events/?covid_risk=HIGH_RISK",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"trace-events",
+						""
+					],
+					"query": [
+						{
+							"key": "covid_risk",
+							"value": "HIGH_RISK",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uuid\": \"8ec76ea3-6668-48da-9866-fcf5c4315204\",\r\n    \"employee_id\": \"vishnu123\",\r\n    \"employee_name\": \"vishnu\",\r\n    \"temperature\": 35,\r\n    \"breathing\": false,\r\n    \"cough\": false,\r\n    \"body_pain\": false,\r\n    \"throat_pain\": true\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/trace-events/?duration_gt=<duration in sec>",
+			"request": {
+				"url": {
+					"raw": "{{url}}/trace-events/?duration_gt=60",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"trace-events",
+						""
+					],
+					"query": [
+						{
+							"key": "duration_gt",
+							"value": "60",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uuid\": \"8ec76ea3-6668-48da-9866-fcf5c4315204\",\r\n    \"employee_id\": \"vishnu123\",\r\n    \"employee_name\": \"vishnu\",\r\n    \"temperature\": 35,\r\n    \"breathing\": false,\r\n    \"cough\": false,\r\n    \"body_pain\": false,\r\n    \"throat_pain\": true\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/trace-events/?start_date=2020-08-05T13:33:08.986308Z&end_date=2020-08-08T19:33:08.986308Z",
+			"request": {
+				"url": {
+					"raw": "{{url}}/trace-events/?start_date=2020-08-30T00:01:13.521663Z&end_date=2020-08-30T13:45:13.521663Z",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"trace-events",
+						""
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "2020-08-30T00:01:13.521663Z",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "end_date",
+							"value": "2020-08-30T13:45:13.521663Z",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uuid\": \"8ec76ea3-6668-48da-9866-fcf5c4315204\",\r\n    \"employee_id\": \"vishnu123\",\r\n    \"employee_name\": \"vishnu\",\r\n    \"temperature\": 35,\r\n    \"breathing\": false,\r\n    \"cough\": false,\r\n    \"body_pain\": false,\r\n    \"throat_pain\": true\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/active-traces/",
+			"request": {
+				"url": "{{url}}/active-traces/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uuid\": \"8ec76ea3-6668-48da-9866-fcf5c4315204\",\r\n    \"employee_id\": \"vishnu123\",\r\n    \"employee_name\": \"vishnu\",\r\n    \"temperature\": 35,\r\n    \"breathing\": false,\r\n    \"cough\": false,\r\n    \"body_pain\": false,\r\n    \"throat_pain\": true\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/active-traces/",
+			"request": {
+				"url": "{{url}}/active-traces/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"first_timestamp\": 1598699569,\n    \"partner_uuid\": \"d1353151-efbf-b195-724a-085e0c8aa06d\",\n    \"min_distance\": 0.01,\n    \"max_distance\": 0.04,\n    \"self_uuid\": \"8ec76ea3-6668-48da-9866-fcf5c4315204\",\n    \"last_timestamp\": 1598699591,\n    \"covid_risk\": \"HIGH RISK\",\n    \"duration\": 22\n  },\n  {\n    \"partner_uuid\": \"952fceb0-a33a-4192-c543-9872db13658c\",\n    \"self_uuid\": \"8ec76ea3-6668-48da-9866-fcf5c4315204\",\n    \"min_distance\": 0.01,\n    \"max_distance\": 0.04,\n    \"duration\": 22,\n    \"covid_risk\": \"HIGH_RISK\",\n    \"first_timestamp\": \"2020-08-29T16:52:37.526881\",\n    \"last_timestamp\": \"2020-08-29T16:52:55.526882\"\n  }\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/medical-health/",
+			"request": {
+				"url": "{{url}}/medical-health/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uuid\": \"8ec76ea3-6668-48da-9866-fcf5c4315204\",\r\n    \"employee_id\": \"vishnu123\",\r\n    \"employee_name\": \"vishnu\",\r\n    \"temperature\": 35,\r\n    \"breathing\": false,\r\n    \"cough\": false,\r\n    \"body_pain\": false,\r\n    \"throat_pain\": true\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
