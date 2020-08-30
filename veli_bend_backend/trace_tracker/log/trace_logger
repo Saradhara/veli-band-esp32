@@ -1,0 +1,403 @@
+[2020-08-30 17:09:48,864] [MainThread] INFO [main.py:<module>:121] tag tracker service started
+[2020-08-30 17:09:48,891] [Thread-2] INFO [main.py:on_connect:26] connected to broker......
+[2020-08-30 17:09:48,893] [Thread-2] INFO [main.py:on_connect:28] you have subscribe for the topic trace
+[2020-08-30 17:09:48,898] [Thread-2] INFO [main.py:on_connect:30] you have subscribe for the topic heartbeat
+[2020-08-30 17:09:53,987] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:09:53,989] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:09:54,004] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:09:54,006] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787592, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:09:54,008] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:09:59,016] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:09:59,026] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:09:59,028] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:09:59,029] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787592, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:09:59,038] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:10:04,053] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:10:04,060] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:10:04,105] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:10:04,116] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787602, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:10:04,131] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:10:09,432] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:10:09,440] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:10:09,443] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:10:09,497] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787602, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:10:09,500] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:10:14,658] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:10:14,702] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:10:14,708] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:10:14,712] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787613, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:10:14,715] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:10:19,723] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:10:19,730] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:10:19,733] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:10:19,735] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787613, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:10:19,746] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:10:24,749] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:10:24,750] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:10:24,760] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:10:24,762] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787622, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:10:24,766] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:10:29,773] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:10:29,852] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:10:29,859] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:10:29,894] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787622, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:10:30,014] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:10:35,237] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:10:35,373] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:10:35,633] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:10:35,920] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787632, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:10:35,944] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:10:40,955] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:10:40,961] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:10:40,966] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:10:40,988] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787632, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:10:41,005] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:10:46,382] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:10:46,416] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:10:46,481] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:10:48,302] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787643, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:10:49,970] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:10:55,281] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:10:55,287] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:10:55,290] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:10:55,293] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787652, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:10:55,300] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:11:00,383] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:11:00,407] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:11:00,409] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:11:00,416] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787652, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:11:00,419] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:11:05,454] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:11:05,700] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:11:06,125] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:11:06,652] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787662, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:11:07,052] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:11:12,101] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:11:12,111] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:11:12,118] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:11:12,121] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787662, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:11:12,124] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:11:17,128] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:11:17,134] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:11:17,137] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:11:17,138] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787672, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:11:17,141] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:11:22,161] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:11:22,489] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:11:22,649] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:11:23,912] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787682, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:11:23,921] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:11:28,923] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:11:28,924] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:11:28,930] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:11:28,932] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787682, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:11:28,934] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:11:33,942] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:11:33,943] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:11:33,952] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:11:33,953] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787692, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:11:33,955] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:11:38,956] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:11:38,956] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:11:38,979] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:11:38,984] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787692, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:11:38,985] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:11:44,004] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:11:44,005] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:11:44,014] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:11:44,016] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787702, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:11:44,021] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:11:49,028] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:11:49,030] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:11:49,052] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:11:49,061] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787702, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:11:49,065] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:11:54,066] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:11:54,067] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:11:54,073] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:11:54,075] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787712, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:11:54,077] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:11:59,078] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:11:59,079] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:11:59,085] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:11:59,087] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787712, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:11:59,089] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:12:04,090] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:12:04,090] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:12:04,096] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:12:04,099] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787722, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:12:04,100] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:12:09,102] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:12:09,102] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:12:09,109] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:12:09,130] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787722, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:12:09,137] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:12:14,138] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:12:14,139] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:12:14,145] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:12:14,146] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787732, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:12:14,148] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:12:19,150] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:12:19,151] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:12:19,171] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:12:19,177] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787732, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:12:19,178] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:12:24,180] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:12:24,181] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:12:24,187] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:12:24,189] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787742, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:12:24,191] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:12:29,194] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:12:29,195] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:12:29,219] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:12:29,227] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787742, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:12:29,230] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:12:34,348] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:12:34,366] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:12:35,168] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:12:35,180] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787752, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:12:35,682] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:12:43,034] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:12:43,062] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:12:43,104] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:12:43,108] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787763, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:12:43,111] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:12:48,185] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:12:48,196] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:12:48,199] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:12:48,201] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787763, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:12:48,204] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:12:53,213] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:12:53,225] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:12:53,230] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:12:53,233] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787772, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:12:53,236] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:12:58,308] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:12:58,418] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:12:58,438] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:12:58,441] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787772, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:12:58,448] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:13:03,617] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:13:03,947] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:13:03,951] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:13:03,961] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787782, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:13:03,963] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:13:09,153] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:13:09,190] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:13:09,223] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:13:09,253] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787782, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:13:09,265] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:13:14,289] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:13:14,292] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:13:14,297] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:13:14,299] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787793, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:13:14,301] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:13:20,648] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:13:20,675] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:13:20,696] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:13:20,699] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787793, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:13:20,701] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:13:25,703] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:13:25,704] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:13:25,705] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:13:25,707] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787802, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:13:25,709] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:13:31,216] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:13:31,959] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:13:32,813] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:13:32,844] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787802, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:13:32,847] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:13:37,854] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:13:37,854] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:13:37,859] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:13:37,862] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'ip': '192.168.1.2', 'last_timestamp': 1598787812, 'battery': 33, 'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204'}}
+[2020-08-30 17:13:37,864] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:16:41,081] [MainThread] INFO [main.py:<module>:121] tag tracker service started
+[2020-08-30 17:16:41,092] [Thread-2] INFO [main.py:on_connect:26] connected to broker......
+[2020-08-30 17:16:41,094] [Thread-2] INFO [main.py:on_connect:28] you have subscribe for the topic trace
+[2020-08-30 17:16:41,095] [Thread-2] INFO [main.py:on_connect:30] you have subscribe for the topic heartbeat
+[2020-08-30 17:16:46,094] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:16:46,095] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:16:46,097] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:16:46,097] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788003, 'battery': 33}}
+[2020-08-30 17:16:46,098] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:16:51,113] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:16:51,147] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:16:51,148] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:16:51,148] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788003, 'battery': 33}}
+[2020-08-30 17:16:51,149] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:16:56,150] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:16:56,151] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:16:56,152] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:16:56,153] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788013, 'battery': 33}}
+[2020-08-30 17:16:56,155] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:17:01,190] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:17:01,199] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:17:01,209] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:17:01,211] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788013, 'battery': 33}}
+[2020-08-30 17:17:01,213] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:17:06,263] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:17:06,633] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:17:06,737] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:17:06,788] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788023, 'battery': 33}}
+[2020-08-30 17:17:06,849] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:17:11,918] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:17:11,918] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:17:11,922] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:17:11,925] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788023, 'battery': 33}}
+[2020-08-30 17:17:11,926] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:17:16,928] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:17:16,929] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:17:16,933] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:17:16,936] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788033, 'battery': 33}}
+[2020-08-30 17:17:16,938] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:17:21,948] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:17:21,957] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:17:21,959] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:17:21,967] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788033, 'battery': 33}}
+[2020-08-30 17:17:21,971] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:17:27,002] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:17:27,026] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:17:27,052] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:17:27,069] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788043, 'battery': 33}}
+[2020-08-30 17:17:27,095] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:17:32,193] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:17:32,201] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:17:32,237] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:17:32,244] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788043, 'battery': 33}}
+[2020-08-30 17:17:32,250] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:17:37,359] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:17:37,359] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:17:37,363] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:17:37,365] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788053, 'battery': 33}}
+[2020-08-30 17:17:37,368] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:17:42,370] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:17:42,428] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:17:42,549] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:17:42,614] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788053, 'battery': 33}}
+[2020-08-30 17:17:42,656] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:17:47,746] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:17:47,749] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:17:47,751] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:17:47,753] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788063, 'battery': 33}}
+[2020-08-30 17:17:47,755] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:17:52,797] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:17:52,849] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:17:52,891] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:17:52,892] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788063, 'battery': 33}}
+[2020-08-30 17:17:52,895] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:17:57,898] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:17:57,902] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:17:57,904] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:17:57,905] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788073, 'battery': 33}}
+[2020-08-30 17:17:57,907] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:18:03,094] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:18:03,200] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:18:03,216] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:18:03,224] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788083, 'battery': 33}}
+[2020-08-30 17:18:03,240] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:18:08,257] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:18:08,258] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:18:08,262] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:18:08,263] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788083, 'battery': 33}}
+[2020-08-30 17:18:08,266] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:18:13,267] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:18:13,267] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:18:13,270] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:18:13,271] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788093, 'battery': 33}}
+[2020-08-30 17:18:13,272] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:18:18,274] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:18:18,275] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:18:18,279] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:18:18,280] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788093, 'battery': 33}}
+[2020-08-30 17:18:18,281] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:18:23,284] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:18:23,284] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:18:23,288] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:18:23,289] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788103, 'battery': 33}}
+[2020-08-30 17:18:23,290] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:18:28,293] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:18:28,294] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:18:28,297] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:18:28,299] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788103, 'battery': 33}}
+[2020-08-30 17:18:28,300] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:18:33,301] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:18:33,302] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:18:33,306] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:18:33,307] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788113, 'battery': 33}}
+[2020-08-30 17:18:33,308] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:18:38,309] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:18:38,310] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:18:38,314] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:18:38,315] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788113, 'battery': 33}}
+[2020-08-30 17:18:38,316] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:18:43,319] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:18:43,320] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:18:43,324] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:18:43,325] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788123, 'battery': 33}}
+[2020-08-30 17:18:43,327] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:18:48,328] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:18:48,328] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:18:48,331] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:18:48,332] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788123, 'battery': 33}}
+[2020-08-30 17:18:48,333] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:18:53,334] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:18:53,335] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:18:53,339] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:18:53,341] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788133, 'battery': 33}}
+[2020-08-30 17:18:53,342] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:18:58,344] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:18:58,345] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:18:58,349] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:18:58,350] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788133, 'battery': 33}}
+[2020-08-30 17:18:58,351] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:19:03,353] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:19:03,354] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:19:03,358] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:19:03,360] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788143, 'battery': 33}}
+[2020-08-30 17:19:03,361] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:19:08,363] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:19:08,364] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:19:08,367] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:19:08,368] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788143, 'battery': 33}}
+[2020-08-30 17:19:08,370] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:19:13,371] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:19:13,372] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:19:13,376] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:19:13,377] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788153, 'battery': 33}}
+[2020-08-30 17:19:13,378] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:19:18,379] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:19:18,380] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:19:18,384] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:19:18,385] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788153, 'battery': 33}}
+[2020-08-30 17:19:18,386] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:19:23,389] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:19:23,390] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:19:23,393] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:19:23,395] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788163, 'battery': 33}}
+[2020-08-30 17:19:23,396] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:19:28,397] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:19:28,398] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:19:28,402] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:19:28,403] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788163, 'battery': 33}}
+[2020-08-30 17:19:28,405] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:19:33,406] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:19:33,407] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:19:33,411] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:19:33,412] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788173, 'battery': 33}}
+[2020-08-30 17:19:33,414] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:19:38,415] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:19:38,416] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:19:38,421] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:19:38,422] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788173, 'battery': 33}}
+[2020-08-30 17:19:38,424] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:19:43,470] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:19:43,487] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:19:43,490] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:19:43,491] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788183, 'battery': 33}}
+[2020-08-30 17:19:43,502] [MainThread] INFO [main.py:<module>:149] *******************************************************
+[2020-08-30 17:19:48,505] [MainThread] INFO [main.py:<module>:139] *******************Active Traces: 0**************
+[2020-08-30 17:19:48,506] [MainThread] INFO [main.py:<module>:145] *********************************************
+[2020-08-30 17:19:48,508] [MainThread] INFO [main.py:<module>:147] *******************Registered devices 1 ************************
+[2020-08-30 17:19:48,509] [MainThread] INFO [main.py:<module>:148] {'8ec76ea3-6668-48da-9866-fcf5c4315204': {'self_uuid': '8ec76ea3-6668-48da-9866-fcf5c4315204', 'ip': '192.168.1.2', 'last_timestamp': 1598788183, 'battery': 33}}
+[2020-08-30 17:19:48,510] [MainThread] INFO [main.py:<module>:149] *******************************************************

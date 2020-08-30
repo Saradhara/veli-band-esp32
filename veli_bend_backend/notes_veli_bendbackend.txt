@@ -1,0 +1,163 @@
+https://github.com/edigiacomo/asgi-mqtt 
+
+To run mosquitto : 
+mosquitto
+
+mosquitto_sub -t trace 
+{"partner_uuid":"8ec76ea3-6668-48da-9866-fcf5c4315204","self_uuid":"8ec76ea3-6668-48da-9866-2462abdd4230","covid_risk":"HIGH","distance":0.117174,"timestamp":11223344}
+
+
+django-admin startproject consumablebags
+https://medium.com/swlh/build-your-first-rest-api-with-django-rest-framework-e394e39a482c
+
+
+..\venv\Scripts\python.exe manage.py makemigrations
+..\venv\Scripts\python.exe manage.py migrate
+..\venv\Scripts\python.exe manage.py runserver
+
+admin user name : qual5
+admin password : qual5
+admin email id : vishnusaradhara@gmail.com
+
+..\venv\Scripts\python.exe  manage.py createsuperuser
+
+
+Need to registor model in admin.py to reflect in admin site.	
+-----------------------------------
+Register device 
+
+device uuid  
+employee id
+employee name
+temperature
+breathing
+cough
+body pain
+throat pain 
+--------------
+{{url}}/register-devices/
+
+{
+    "uuid": "819091be-96cd-39bd-3c4b-96b0407d1a4a",
+    "employee_id": "dinesh123",
+    "employee_name": "dinesh",
+    "temperature": 35,
+    "breathing": false,
+    "cough": false,
+    "body_pain": false,
+    "throat_pain": true
+}
+
+{
+    "uuid": "88835548-e28e-b183-d543-13dc363dfea6",
+    "employee_id": "vishnu123",
+    "employee_name": "vishnu",
+    "temperature": 35,
+    "breathing": false,
+    "cough": false,
+    "body_pain": false,
+    "throat_pain": true
+}
+
+{
+    "uuid": "8ec76ea3-6668-48da-9866-fcf5c4315204",
+    "employee_id": "srini123",
+    "employee_name": "srini",
+    "temperature": 35,
+    "breathing": false,
+    "cough": false,
+    "body_pain": false,
+    "throat_pain": true
+}
+
+{
+    "uuid": "f5c08f25-629c-f589-594b-98cf01e88443",
+    "employee_id": "Ujjwala123",
+    "employee_name": "Ujjwala",
+    "temperature": 35,
+    "breathing": false,
+    "cough": false,
+    "body_pain": false,
+    "throat_pain": true
+}
+{
+    "uuid": "952fceb0-a33a-4192-c543-9872db13658c",
+    "employee_id": "Karthi123",
+    "employee_name": "karthi",
+    "temperature": 35,
+    "breathing": false,
+    "cough": false,
+    "body_pain": false,
+    "throat_pain": true
+}
+
+{
+    "uuid": "d1353151-efbf-b195-724a-085e0c8aa06d",
+    "employee_id": "Kiran123",
+    "employee_name": "Kiran",
+    "temperature": 35,
+    "breathing": false,
+    "cough": false,
+    "body_pain": false,
+    "throat_pain": true
+}
+------------------Active traces --------------
+[
+  {
+    "first_timestamp": 1598699569,
+    "partner_uuid": "d1353151-efbf-b195-724a-085e0c8aa06d",
+    "min_distance": 0.01,
+    "max_distance": 0.04,
+    "self_uuid": "8ec76ea3-6668-48da-9866-fcf5c4315204",
+    "last_timestamp": 1598699591,
+    "covid_risk": "HIGH RISK",
+    "duration": 22
+  },
+  {
+    "partner_uuid": "952fceb0-a33a-4192-c543-9872db13658c",
+    "self_uuid": "8ec76ea3-6668-48da-9866-fcf5c4315204",
+    "min_distance": 0.01,
+    "max_distance": 0.04,
+    "duration": 22,
+    "covid_risk": "HIGH_RISK",
+    "first_timestamp": "2020-08-29T16:52:37.526881",
+    "last_timestamp": "2020-08-29T16:52:55.526882"
+  }
+]
+
+---------------------Dash board KPI--------------------
+Attendance : {{url}}/register-devices/  --- Count of No of register-devices/
+Self Declaration : {{url}}/medical-health/ 
+Violation Completed : {{url}}/trace-events/
+On Going Violations : {{url}}/active-traces/
+
+
+
+-------------------------------
+queryset.values('cough').annotate(count=Count('cough'))
+queryset.values('action', 'hub_id').annotate(count=Count('action')).filter(action="CheckOut", hub_id=hub_id).get().get('count')
+
+queryset.filter(cough=True)
+
+----------------------------------------
+
+..\venv\Scripts\chasgimqtt.exe -H localhost -p 1883 --topic=trace:2 veliband.asgi:channel_layer
+
+..\venv\Scripts\chasgimqtt.exe -H iot.eclipse.org -p 1883 --topic=some_topic:2 veliband.asgi:channel_layer
+
+..\venv\Scripts\asgimqtt.exe --host localhost --port 1883 --topic=trace:2 veliband.asgi:channel_layer
+
+chasgimqtt -H iot.eclipse.org -p 1883 --topic=some_topic:2 mysite.asgi:channel_layer
+..\venv\Scripts\python.exe manage.py runworker mqtt
+
+
+C:\workspace_qual5\veli_band_backend\venv\Scripts\python.exe -m pip install -r requirements.txt
+C:\workspace_qual5\veli_band_backend\venv\Scripts\python.exe manage.py migrate
+
+C:\workspace_qual5\veli_band_backend\venv\Scripts\asgimqtt.exe --host localhost --port 1883 example_project.asgi:channel_layer
+C:\workspace_qual5\veli_band_backend\venv\Scripts\python.exe manage.py runserver
+
+chasgimqtt	----- Try this https://github.com/xavierlesa/channels-asgi-mqtt/tree/master/examples/sample_project once
+-------------------------------------
+
+{"first_timestamp": 1598717971, "min_distance": 0.08, "last_timestamp": 1598718002, "partner_uuid": "8ec76ea3-6668-48da-9866-2462abdd4230", "covid_risk": "HIGH RISK", "self_uuid": "8ec76ea3-6668-48da-9866-fcf5c4315204", "duration": 31, "max_distance": 0.12}

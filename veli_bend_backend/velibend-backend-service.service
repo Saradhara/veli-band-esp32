@@ -1,0 +1,12 @@
+[Unit]
+Description=consumable backend service
+After=network.target
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=qualfi
+ExecStart=/usr/bin/python3 /home/qualfi/consumable-bag-tracking-flow/consumablebags/manage.py runserver 0.0.0.0:7000
+[Install]
+WantedBy=multi-user.target

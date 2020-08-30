@@ -1,0 +1,21 @@
+certifi==2020.6.20
+cffi==1.14.2
+chardet==3.0.4
+cryptography==3.0
+Django==2.2.12
+django-cors-headers==3.2.1
+django-jsonfield==1.4.0
+djangorestframework==3.11.0
+djangorestframework-bulk==0.2.1
+djangorestframework-simplejwt==4.3.0
+idna==2.10
+mysqlclient @ file:///D:/workspace_qual5/consumable-bag-tracking-flow/mysqlclient-1.4.6-cp35-cp35m-win_amd64.whl
+numpy==1.18.5
+paho-mqtt==1.5.0
+pycparser==2.20
+PyJWT==1.7.1
+pytz==2019.3
+requests==2.24.0
+six==1.15.0
+sqlparse==0.3.1
+urllib3==1.25.10
