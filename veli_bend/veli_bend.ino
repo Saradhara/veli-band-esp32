@@ -48,6 +48,7 @@ void setup()
   pAdvertising = BLEDevice::getAdvertising();
   setBeacon();
   pAdvertising->start();
+  Serial.println("configuration done");
   Serial.println("Advertizing started...");
   pBLEScan = BLEDevice::getScan();  //create new scan
   pBLEScan->setAdvertisedDeviceCallbacks(new MyAdvertisedDeviceCallbacks());
