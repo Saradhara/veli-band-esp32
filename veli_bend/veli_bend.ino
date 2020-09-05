@@ -11,6 +11,8 @@
 void setup()
 {
   Serial.begin(115200);
+  ledcSetup(0, 2000, 8);
+  ledcAttachPin(27, 0);
   self_uuid = get_uuid();
   /*create the queue which size can contains 5 elements of Data */
   xQueue = xQueueCreate(20, sizeof(Trace));
@@ -25,7 +27,10 @@ void setup()
   xTaskCreatePinnedToCore(heartBeat, "heartBeat", 4096, NULL, 0, NULL, 0);
 
   Serial.println("Scanning...........");
-  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(LED_RED, OUTPUT);
+  pinMode(LED_GREEN, OUTPUT);
+  pinMode(LED_BLUE, OUTPUT);
+  pinMode(Motor, OUTPUT);
   BLEDevice::init("VeliBand");
   BLEDevice::setPower(ESP_PWR_LVL_P9);
 

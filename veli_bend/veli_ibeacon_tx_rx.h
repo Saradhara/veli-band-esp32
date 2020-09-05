@@ -8,7 +8,10 @@
 #include "BLEScan.h"
 #include "BLEAdvertisedDevice.h"
 
-int LED_BUILTIN = 2;
+int LED_RED = 13;
+int LED_GREEN = 12;
+int LED_BLUE = 14;
+int Motor = 26;
 
 #define ENDIAN_CHANGE_U16(x)((((x) &0xFF00) >> 8) + (((x) &0xFF) << 8))
 #define TX_POWER - 57 // measured RSSI at 1m distance
@@ -16,7 +19,6 @@ int LED_BUILTIN = 2;
 int scanTime = 1; //In seconds
 BLEScan * pBLEScan;
 BLEAdvertising * pAdvertising;
-
 /*iBeacon Transmitter called from setup*/
 void setBeacon()
 {
@@ -77,24 +79,36 @@ class MyAdvertisedDeviceCallbacks: public BLEAdvertisedDeviceCallbacks
           {
             covid_risk = "HIGH_RISK";
             //buzzer code place here
-            digitalWrite(LED_BUILTIN, HIGH);
+            digitalWrite(LED_RED, HIGH);
+            digitalWrite(Motor, HIGH);
+            ledcWriteTone(0, 4005);
             vTaskDelay(100 / portTICK_PERIOD_MS);
-            digitalWrite(LED_BUILTIN, LOW);
+            digitalWrite(LED_RED, LOW);
+            digitalWrite(Motor, LOW);
+            ledcWriteTone(0, 0);
           }
           else if (distance <= 2)
           {
             covid_risk = "MEDIUM_RISK";
             //buzzer code place here
-            digitalWrite(LED_BUILTIN, HIGH);
+            digitalWrite(LED_GREEN, HIGH);
+            digitalWrite(Motor, HIGH);
+            ledcWriteTone(0, 4005);
             vTaskDelay(100 / portTICK_PERIOD_MS);
-            digitalWrite(LED_BUILTIN, LOW);
+            digitalWrite(LED_GREEN, LOW);
+            digitalWrite(Motor, LOW);
+            ledcWriteTone(0, 0);
           }
           else
           {
             covid_risk = "LOW_RISK";
-            digitalWrite(LED_BUILTIN, HIGH);
+            digitalWrite(LED_BLUE, HIGH);
+            digitalWrite(Motor, HIGH);
+//            ledcWriteTone(0, 4005);
             vTaskDelay(100 / portTICK_PERIOD_MS);
-            digitalWrite(LED_BUILTIN, LOW);
+            digitalWrite(LED_BLUE, LOW);
+            digitalWrite(Motor, LOW);
+//            ledcWriteTone(0, 0);
           }
 
           data.distance = distance;
