@@ -6,13 +6,13 @@
 #include "HTTPClient.h"
 #include "PubSubClient.h"
 #include "ArduinoJson.h"
-#define WIFI_NETWORK "braver"
+#define WIFI_NETWORK "braverpixel"
 #define WIFI_PASSWORD "vishnu@392"
 #define SERVER_END_POINT "http://192.168.1.11:8888/trace"
 #define WIFI_TIMEOUT_MS 3000  // 5 second WiFi connection timeout, don't change this parameter 
 #define WIFI_RECOVER_TIME_MS 30000  // Wait 10 seconds after a failed connection attempt
 
-const char *mqttServer = "192.168.1.11";
+const char *mqttServer = "192.168.43.251";
 const int mqttPort = 1883;
 const char *clientID = "";
 const char *topic_heartbeat = "heartbeat";

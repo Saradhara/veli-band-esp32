@@ -8,14 +8,14 @@
 #include "BLEScan.h"
 #include "BLEAdvertisedDevice.h"
 
-int LED_RED = 13;
-int LED_GREEN = 12;
-int LED_BLUE = 14;
+int LED_RED = 14;
+int LED_GREEN = 5;
+int LED_BLUE = 13;
 int Motor = 26;
 
 #define ENDIAN_CHANGE_U16(x)((((x) &0xFF00) >> 8) + (((x) &0xFF) << 8))
-#define TX_POWER - 57 // measured RSSI at 1m distance
-#define THRESHOLD - 64  // cut off
+#define TX_POWER -70 // measured RSSI at 1m distance
+#define THRESHOLD -90  // cut off
 int scanTime = 1; //In seconds
 BLEScan * pBLEScan;
 BLEAdvertising * pAdvertising;
@@ -91,22 +91,22 @@ class MyAdvertisedDeviceCallbacks: public BLEAdvertisedDeviceCallbacks
           {
             covid_risk = "MEDIUM_RISK";
             //buzzer code place here
-            digitalWrite(LED_GREEN, HIGH);
+            digitalWrite(LED_BLUE, HIGH);
             digitalWrite(Motor, HIGH);
             ledcWriteTone(0, 4005);
             vTaskDelay(100 / portTICK_PERIOD_MS);
-            digitalWrite(LED_GREEN, LOW);
+            digitalWrite(LED_BLUE, LOW);
             digitalWrite(Motor, LOW);
             ledcWriteTone(0, 0);
           }
           else
           {
             covid_risk = "LOW_RISK";
-            digitalWrite(LED_BLUE, HIGH);
+            digitalWrite(LED_GREEN, HIGH);
             digitalWrite(Motor, HIGH);
 //            ledcWriteTone(0, 4005);
             vTaskDelay(100 / portTICK_PERIOD_MS);
-            digitalWrite(LED_BLUE, LOW);
+            digitalWrite(LED_GREEN, LOW);
             digitalWrite(Motor, LOW);
 //            ledcWriteTone(0, 0);
           }
