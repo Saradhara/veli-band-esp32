@@ -60,6 +60,13 @@ class TraceTracker:
                 Constants.MAX_DISTANCE]})
             trace.update({Constants.MIN_DISTANCE: distance if distance < trace[Constants.MIN_DISTANCE] else trace[
                 Constants.MIN_DISTANCE]})
+            previous_covid_risk = trace[Constants.COVID_RISK]
+            if previous_covid_risk == 'LOW_RISK' and covid_risk in ['HIGH_RISK', 'MEDIUM_RISK']:
+                trace.update({Constants.COVID_RISK: covid_risk})
+            elif previous_covid_risk == 'MEDIUM_RISK' and covid_risk in ['HIGH_RISK']:
+                trace.update({Constants.COVID_RISK: covid_risk})
+            elif previous_covid_risk == 'HIGH_RISK' and covid_risk in ['HIGH_RISK']:
+                trace.update({Constants.COVID_RISK: covid_risk})
             trace[Constants.DURATION] = trace[Constants.LAST_TIMESTAMP] - trace[Constants.FIRST_TIMESTAMP]
             self.traces[trace_uuid] = trace
         # log.debug(self.traces)
