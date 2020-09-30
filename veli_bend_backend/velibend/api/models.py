@@ -18,8 +18,8 @@ class RegisterDevice(models.Model):
 
 
 class TraceEvent(models.Model):
-    partner_uuid = models.ForeignKey(RegisterDevice, on_delete=models.CASCADE, related_name='device_wear_by_partner')
-    self_uuid = models.ForeignKey(RegisterDevice, on_delete=models.CASCADE, related_name='device_wear_by_self')
+    partner_uuid = models.CharField(max_length=36)
+    self_uuid = models.CharField(max_length=36)
     self_emp_id = models.CharField(max_length=36)
     self_emp_name = models.CharField(max_length=36)
     partner_emp_id = models.CharField(max_length=36)
