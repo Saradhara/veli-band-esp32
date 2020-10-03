@@ -14,13 +14,14 @@ from config import Constants
 from heart_beat_tracker import HeartBeatTracker
 from logger import Logger
 from trace_tracker import TraceTracker
+import http.client
 
 log = logging.getLogger(Constants.LOG_HANDLER_NAME)
 trace_tracker = TraceTracker(chk_timer=Constants.CHK_TIMER, threshold=Constants.THRESHOLD)
 heart_beat_tracker = HeartBeatTracker()
 active_traces_q = Queue()
 completed_traces_q = Queue()
-
+conn = http.client.HTTPConnection(Constants.BACKEND_URL)
 
 def on_connect(client, userdata, t1, t2):
     log.info("connected to broker......")
@@ -73,13 +74,16 @@ def push_data_to_mqtt_broker(mqtt_client, data, topic_name):
 
 def push_data_to_backend(trace_events, api):
     payload = json.dumps(trace_events)
+    conn = http.client.HTTPConnection(Constants.BACKEND_URL)
     headers = {
         'content-type': "application/json",
         'cache-control': "no-cache",
     }
     try:
-        response = requests.request("POST", api, data=payload, headers=headers)
-        print("Data pushed to API {} , response code : {}".format(api, response.status_code))
+        conn.request("POST", api, payload, headers)
+        response = conn.getresponse()
+        conn.close()
+        print("Data pushed to API {} , response code : {}".format(api, response.getcode()))
     except Exception as e:
         print("Failed to push data .............trying again")
         time.sleep(1)

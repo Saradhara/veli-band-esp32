@@ -30,8 +30,9 @@ class Constants:
     DURATION = 'duration'
     IP = 'ip'
     BATTERY = 'battery'
-    ACTIVE_TRACES_API_ENDPOINT = 'http://localhost:8000/active-traces/'
-    COMPLETED_TRACES_API_ENDPOINT = 'http://localhost:8000/trace-events/'
+    BACKEND_URL = 'localhost:8000'
+    ACTIVE_TRACES_API_ENDPOINT = '/active-traces/'
+    COMPLETED_TRACES_API_ENDPOINT = '/trace-events/'
 
     CHK_TIMER = 2
     THRESHOLD = 15
